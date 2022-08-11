@@ -114,63 +114,28 @@
 		<script>
 			"use strict";
 
-			!(function () {
-				var t =
-					(window.driftt =
-					window.drift =
-						window.driftt || []);
+			!function () {
+				var t = window.driftt = window.drift = window.driftt || [];
 				if (!t.init) {
-					if (t.invoked)
-						return void (
-							window.console &&
-							console.error &&
-							console.error("Drift snippet included twice.")
-						);
-					(t.invoked = !0),
-						(t.methods = [
-							"identify",
-							"config",
-							"track",
-							"reset",
-							"debug",
-							"show",
-							"ping",
-							"page",
-							"hide",
-							"off",
-							"on",
-						]),
-						(t.factory = function (e) {
+					if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+					t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+						t.factory = function (e) {
 							return function () {
-								var n =
-									Array.prototype.slice.call(arguments);
+								var n = Array.prototype.slice.call(arguments);
 								return n.unshift(e), t.push(n), t;
 							};
-						}),
-						t.methods.forEach(function (e) {
+						}, t.methods.forEach(function (e) {
 							t[e] = t.factory(e);
-						}),
-						(t.load = function (t) {
-							var e = 3e5,
-								n = Math.ceil(new Date() / e) * e,
-								o = document.createElement("script");
-							(o.type = "text/javascript"),
-								(o.async = !0),
-								(o.crossorigin = "anonymous"),
-								(o.src =
-									"https://js.driftt.com/include/" +
-									n +
-									"/" +
-									t +
-									".js");
-							var i =
-								document.getElementsByTagName("script")[0];
+						}), t.load = function (t) {
+							var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+							o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+							var i = document.getElementsByTagName("script")[0];
 							i.parentNode.insertBefore(o, i);
-						});
+						};
 				}
-			})();
-			drift.SNIPPET_VERSION = "0.3.1";
-			drift.load("5m8hvyn86bfi");
+			}();
+			drift.SNIPPET_VERSION = '0.3.1';
+			drift.load('5m8hvyn86bfi');
 		</script>
 		<!-- End of Async Drift Code -->
 		<!-- CSS 
@@ -682,15 +647,7 @@
 									My focus is on continuing to build the
 									skills and growth towards aesthetically
 									pleasing and dynamically functional FULL
-									STACK applications. Outside of coding, I
-									enjoy traveling and also of course
-									fitness.
-								</p>
-								<p class="discription">
-									Lorem ipsum dolor sit amet, consectetur
-									adipisicing elit. Eum in eos saepe ipsa
-									cupiditate accusantium voluptatibus quidem
-									nam, reprehenderit,
+									STACK applications. Outside of coding, fitness keeps me balanced.
 								</p>
 							</div>
 						</div>
@@ -736,12 +693,12 @@
 									<div class="content">
 										<h4 class="title">
 											<a href="#"
-												>Landing Pages & Websites</a
+												>Landing Pages</a
 											>
 										</h4>
 										<p class="description">
 											I specialize in creating landing pages
-											that are dynamically built using html,
+											that are responsive and dynamically built using html,
 											css and javascript.
 										</p>
 									</div>
@@ -765,77 +722,11 @@
 									</div>
 									<div class="content">
 										<h4 class="title">
-											<a href="#">HTML Email Development</a>
+											<a href="#">Email Development</a>
 										</h4>
 										<p class="description">
-											It uses a dictionary of over 200 Latin
-											words, combined with a handful of
-											model sentence.
+											Proficient in developing responsive html emails for various clients. Applying best practices towards regulations, campaigns with emphasis on segmentation and troubleshooting performance issues. 
 										</p>
-									</div>
-								</div>
-								<a class="over-link" href="#"></a>
-							</div>
-						</div>
-						<!-- End SIngle Service -->
-						<!-- Start Single Service -->
-						<div
-							data-aos="fade-up"
-							data-aos-duration="500"
-							data-aos-delay="500"
-							data-aos-once="true"
-							class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30"
-						>
-							<div class="rn-service">
-								<div class="inner">
-									<div class="icon">
-										<i data-feather="tv"></i>
-									</div>
-									<div class="content">
-										<h4 class="title">
-											<a href="#"
-												>Shopify Theme Development</a
-											>
-										</h4>
-										<p class="description">
-											I throw myself down among the tall
-											grass by the stream as I lie close to
-											the earth.
-										</p>
-										<a class="read-more-button" href="#"
-											><i class="feather-arrow-right"></i
-										></a>
-									</div>
-								</div>
-								<a class="over-link" href="#"></a>
-							</div>
-						</div>
-						<!-- End SIngle Service -->
-						<!-- Start Single Service -->
-						<div
-							data-aos="fade-up"
-							data-aos-duration="500"
-							data-aos-delay="100"
-							data-aos-once="true"
-							class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30"
-						>
-							<div class="rn-service">
-								<div class="inner">
-									<div class="icon">
-										<i data-feather="twitch"></i>
-									</div>
-									<div class="content">
-										<h4 class="title">
-											<a href="#">Mobile App</a>
-										</h4>
-										<p class="description">
-											There are many variations of passages
-											of Lorem Ipsum available, but the
-											majority.
-										</p>
-										<a class="read-more-button" href="#"
-											><i class="feather-arrow-right"></i
-										></a>
 									</div>
 								</div>
 								<a class="over-link" href="#"></a>
@@ -857,45 +748,10 @@
 									</div>
 									<div class="content">
 										<h4 class="title">
-											<a href="#">CEO Marketing</a>
+											<a href="#">Marketing</a>
 										</h4>
 										<p class="description">
-											always free from repetition, injected
-											humour, or non-characteristic words
-											etc.
-										</p>
-										<a class="read-more-button" href="#"
-											><i class="feather-arrow-right"></i
-										></a>
-									</div>
-								</div>
-								<a class="over-link" href="#"></a>
-							</div>
-						</div>
-						<!-- End SIngle Service -->
-						<!-- Start Single Service -->
-						<div
-							data-aos="fade-up"
-							data-aos-duration="500"
-							data-aos-delay="500"
-							data-aos-once="true"
-							class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30"
-						>
-							<div class="rn-service">
-								<div class="inner">
-									<div class="icon">
-										<i data-feather="slack"></i>
-									</div>
-									<div class="content">
-										<h4 class="title">
-											<a href="#"
-												>Personal Portfolio April</a
-											>
-										</h4>
-										<p class="description">
-											It uses a dictionary of over 200 Latin
-											words, combined with a handful of
-											model sentence.
+											Familiar with marketing tools like Google Analytics and SEO practices that helps garner attention to the products utilized throughout websites/emails.
 										</p>
 										<a class="read-more-button" href="#"
 											><i class="feather-arrow-right"></i
@@ -989,7 +845,7 @@
 											<div class="thumbnail">
 												<a href="portfolio/project2">
 													<img
-														src="images/portfolio/project1-thumb.jpg"
+														src="images/portfolio/project2-thumb.png"
 														alt="Personal Portfolio Image"
 													/>
 												</a>
@@ -998,7 +854,7 @@
 												<div class="category-info">
 													<div class="category-list">
 														<a href="portfolio/project2"
-															>Transactional Email</a
+															>Promotional Email</a
 														>
 													</div>
 												</div>
@@ -1027,7 +883,7 @@
 											<div class="thumbnail">
 												<a href="portfolio/project3">
 													<img
-														src="images/portfolio/project1-thumb.jpg"
+														src="images/portfolio/project3-thumb.png"
 														alt="Personal Portfolio Image"
 													/>
 												</a>
@@ -1036,7 +892,7 @@
 												<div class="category-info">
 													<div class="category-list">
 														<a href="portfolio/project3"
-															>Transactional Email</a
+															>Newsletter Email</a
 														>
 													</div>
 												</div>
@@ -1065,7 +921,7 @@
 											<div class="thumbnail">
 												<a href="portfolio/project4">
 													<img
-														src="images/portfolio/project1-thumb.jpg"
+														src="images/portfolio/project4-thumb.png"
 														alt="Personal Portfolio Image"
 													/>
 												</a>
@@ -1103,7 +959,7 @@
 											<div class="thumbnail">
 												<a href="portfolio/project5">
 													<img
-														src="images/portfolio/project1-thumb.jpg"
+														src="images/portfolio/project5-thumb.jpg"
 														alt="Personal Portfolio Image"
 													/>
 												</a>
