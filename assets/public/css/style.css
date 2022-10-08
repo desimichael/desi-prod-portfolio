@@ -54,7 +54,7 @@
   --gradient-box-w: linear-gradient(145deg, #e2e8ec, #ffffff);
   --gradient-blue-hover: linear-gradient(145deg, #00008b, #0000cd);
   --color-heading: #ffffff;
-  --color-heading-wv: #1e2125;
+  --color-heading-wv: #151616;
   --color-body: #878e99;
   --color-body-white: #3c3e41;
   --color-lightn: #c4cfde;
@@ -13860,7 +13860,8 @@ body.white-version {
 .white-version .slick-arrow-style-one .slick-arrow {
   color: var(--color-body-white);
   box-shadow: var(--shadow-white-3);
-  background: var(--gradient-box-w); }
+  background: var(--gradient-box-w);
+  border: 1px solid var(--color-midgray); }
   .white-version .slick-arrow-style-one .slick-arrow::before {
     background: var(--gradient-blue-hover); }
 
@@ -14425,7 +14426,7 @@ body.white-version {
   letter-spacing: 2px;
   display: block;
   line-height: 14px;
-  font-weight: 500; }
+  font-weight: 600; }
 
 .white-version .section-title h2.title {
   color: var(--color-body-white); }
