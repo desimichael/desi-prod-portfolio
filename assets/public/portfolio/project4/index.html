@@ -6,17 +6,17 @@
 		<meta name="author"
 					content="Desi Steib" />
 		<meta name="keywords"
-					content="Desi Steib, web developer, email developer, javascript, developer" />
+					content="Desi Steib, email developer, web developer, javascript, developer" />
 		<meta property="image"
 					content="/images/slider/banner-02.png" />
 		<meta property="title"
-					content="Desi Steib - Web Developer" />
+					content="Desi Steib - Email Developer" />
 		<meta property="og:title"
-					content="Desi Steib - Web Developer" />
+					content="Desi Steib - Email Developer" />
 		<meta name="description"
-					content="Desi Steib web developer portfolio and projects." />
+					content="Desi Steib email developer portfolio and projects." />
 		<meta property="og:description"
-					content="Desi Steib web developer portfolio and projects." />
+					content="Desi Steib email developer portfolio and projects." />
 		<meta property="og:image"
 					content="/images/slider/banner-02.png" />
 		<!-- Twitter Meta Tags -->
@@ -43,7 +43,7 @@
 					content="no-cache, no-store, must-revalidate">
 		<meta
 					property="title"
-					content="Desi Steib - Web Developer Personal Portfolio" />
+					content="Desi Steib - Email Developer Personal Portfolio" />
 		<link rel="canonical" href="https://www.desisteib.com/" />
 		<meta property="locale" content="en_US" />
 		<meta property="type" content="website" />
@@ -100,20 +100,48 @@
 
 			gtag("config", "G-Y29RCRJ7RC");
 		</script>
+		<!-- Start of Async Drift Code -->
+		<script>
+			"use strict";
+
+			!function () {
+				var t = window.driftt = window.drift = window.driftt || [];
+				if (!t.init) {
+					if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+					t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+						t.factory = function (e) {
+							return function () {
+								var n = Array.prototype.slice.call(arguments);
+								return n.unshift(e), t.push(n), t;
+							};
+						}, t.methods.forEach(function (e) {
+							t[e] = t.factory(e);
+						}), t.load = function (t) {
+							var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+							o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+							var i = document.getElementsByTagName("script")[0];
+							i.parentNode.insertBefore(o, i);
+						};
+				}
+			}();
+			drift.SNIPPET_VERSION = '0.3.1';
+			drift.load('5m8hvyn86bfi');
+		</script>
+		<!-- End of Async Drift Code -->
 		<!-- CSS  ============================================ -->
 		<link
 					rel="stylesheet"
-					href="../../css/vendor/bootstrap.min.css" />
-		<link rel="stylesheet" href="../../css/vendor/slick.css" />
+					href="css/vendor/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/vendor/slick.css" />
 		<link
 					rel="stylesheet"
-					href="../../css/vendor/slick-theme.css" />
-		<link rel="stylesheet" href="../../css/vendor/aos.css" />
+					href="css/vendor/slick-theme.css" />
+		<link rel="stylesheet" href="css/vendor/aos.css" />
 		<link
 					rel="stylesheet"
-					href="../../css/plugins/feature.css" />
+					href="css/plugins/feature.css" />
 		<!-- Style css -->
-		<link rel="stylesheet" href="../../css/style.css" />
+		<link rel="stylesheet" href="css/style.css" />
 	</head>
 
 <body
