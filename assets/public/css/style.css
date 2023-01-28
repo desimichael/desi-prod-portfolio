@@ -14652,7 +14652,7 @@ body.white-version {
 
 /* Connect Page Start */
 .content-area {
-	 background-image: linear-gradient(to right bottom, #41c0d5, #38bbd7, #33b5d9, #32b0da, #35aadb);
+	background-image: linear-gradient(to bottom right, #48b1bf 0%, #0856c1 100%);
 	width: 100%;
 	height: 100vh;
 	display: flex;
