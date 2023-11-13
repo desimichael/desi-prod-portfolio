@@ -320,9 +320,9 @@ $(function () {
 	});
 
 	/*
-			CMS popup
+			Shopify popup
 		*/
-	$('.has-popup-cms').magnificPopup({
+	$('.has-popup-shopify').magnificPopup({
 		type: 'inline',
 		overflowY: 'auto',
 		closeBtnInside: true,
